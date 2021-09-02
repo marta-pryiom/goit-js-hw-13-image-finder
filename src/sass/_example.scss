@@ -135,3 +135,28 @@ img:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.back_to_top {
+  position: fixed;
+  font-weight: bold;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  text-align: center;
+  line-height: 30px;
+  background: #f5a742;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 4px;
+  display: none;
+  padding: 3px;
+}
+
+.back_to_top:hover {
+  background-color: whitesmoke;
+  color: #f5a742;
+}
+
+.back_to_top-show {
+  display: block;
+}

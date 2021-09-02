@@ -23,8 +23,30 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../node_modules/basiclightbox/dist/basicLightbox.min.css" />
+    <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- <style>
+      #scrollTop {
+        position: fixed;
+        z-index: 5px;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(245, 72, 29);
+        border: 1px solid #fff;
+        padding: 3px;
+      }
+      body {
+        height: 3000px;
+      } -->
+    </style>
   </head>
   <body>
     <div class="search">
@@ -40,6 +62,7 @@
         />
         <button type="submit" class="formBtn btn">Пошук</button>
       </form>
+
     </div>
     <ul class="gallery js-gallery">
       <!-- Список <li> с карточками изображений -->
@@ -57,11 +80,34 @@
       </span>
       <span class="more-label">Переглянути ще</span>
     </button>
+<a class="back_to_top" title="Наверх">
+  Вверх
+</a>
 
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <!-- <include src="./partials/example.html"></include> -->
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <!-- <div id="scrollTop" onclick="goUp()">Вверх</div> -->
+<!-- 
+    <script> -->
+
+
+<!-- 
+      // window.onscroll = function () {
+      //   var scrollElem = document.getElementById('scrollTop');
+      //   if (document.body.scrollTop > document.documentElement.clientHeight) {
+      //     scrollElem.style.opacity = '1';
+      //   } else {
+      //     scrollElem.style.opacity = '0';
+      //   }
+      // };
+      // var timeOut;
+      // function goUp() {
+      //   let top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      //   if (top > 0) {
+      //     window.scrollBy(0, -100);
+      //     timeOut = setTimeout('goUp()', 20);
+      //   } else clearTimeout(timeOut);
+      // } -->
+    <!-- </script> -->
     <script src="./index.js"></script>
   </body>
 </html>
